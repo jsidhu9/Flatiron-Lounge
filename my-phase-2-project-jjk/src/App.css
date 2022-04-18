@@ -1,17 +1,12 @@
 .App {
   text-align: center;
-}
+  background-image: URL("https://i.pinimg.com/564x/1b/9a/fe/1b9afe98dbedc2770f6b37b39eb06b90.jpg");
+  background-repeat:no-repeat;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  background-size:contain;
+  
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -23,16 +18,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#ui-card {
+border: solid;
+border-color:black
 }
