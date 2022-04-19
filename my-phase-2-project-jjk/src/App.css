@@ -1,12 +1,34 @@
+html { 
+  background: url("https://i.pinimg.com/564x/1b/9a/fe/1b9afe98dbedc2770f6b37b39eb06b90.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
-  background-image: URL("https://i.pinimg.com/564x/1b/9a/fe/1b9afe98dbedc2770f6b37b39eb06b90.jpg");
+  /* background-image: URL("https://i.pinimg.com/564x/1b/9a/fe/1b9afe98dbedc2770f6b37b39eb06b90.jpg");
   background-repeat:no-repeat;
 
-  background-size:contain;
+  background-size:contain; */
   
+  display: grid;
+  grid-template-columns: repeat(5, 1fr, 2fr, 2fr, 2fr, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  grid-template-areas:
+    ". . . . ."
+    ". bt bt bt ."
+    ". . rm . ."
+    ". tb tb tb .";
  }
 
+ .belt {
+  grid-area: bt;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .App-header {
   background-color: #282c34;
@@ -18,7 +40,25 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 #ui-card {
 border: solid;
-border-color:black
+border-color:#8a4607ba;
+background-color: rgba(29, 19, 1, 0.73);;
+
+}
+
+.drink-thumb {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+#header {
+  padding: 45px;
+  border: solid;
+  border-color: black;
+  text-align: center;
+  background: #8a4607ba;
+  color: rgb(5, 0, 0);
+  font-size: 40px;
 }

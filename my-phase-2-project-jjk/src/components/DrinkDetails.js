@@ -1,19 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function DrinkDetails({drink}) {
-const ingredientArray = [drink.strIngredient1, drink.strIngredient2, drink]
 
-const display = (drinkPart) => {
-    if (drinkPart === null){
-        return null 
-    } else {
-        return drinkPart
-    }
-}
+
 
   return (
     <div>
-        <img alt={drink.strDrink} src={drink.strDrinkThumb} />
         <div>
             <h3>Category : </h3>
                 <p>{drink.strCategory}</p>
