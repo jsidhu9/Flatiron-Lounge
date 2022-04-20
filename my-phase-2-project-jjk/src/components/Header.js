@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+import AddDrinkForm from './AddDrinkForm'
+import DrinkList from './DrinkList'
 
 
 function Header() {
@@ -12,10 +14,10 @@ function Header() {
     >DrinkLounge</h1>
 
       <NavLink exact to='/' >
-      Drink List
+          Drink List
       </NavLink>
       <NavLink to='/add drink form'>
-
+        <AddDrinkForm />
       </NavLink>
 
     </>

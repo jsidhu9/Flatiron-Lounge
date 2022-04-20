@@ -20,16 +20,16 @@ const [drinksList, setDrinksList] = useState([])
   return (
     <div className="App">
     <Switch>
+      <Route path='/add drink form'>
+        <AddDrinkForm/>
+      </Route>
+      <Route path='/drink details'>
+        <DrinkDetails/>
+      </Route>
       <Route exact path='/'>
         <Home
           drinks={drinksList}
         />
-      </Route>
-      <Route exact path='/add drink form'>
-        <AddDrinkForm/>
-      </Route>
-      <Route exact path='/drink details'>
-        <DrinkDetails/>
       </Route>
     </Switch>
     </div>
