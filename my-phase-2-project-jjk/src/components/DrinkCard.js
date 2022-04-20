@@ -10,10 +10,6 @@ const handleDetailsClick = (e) => {
     setShowDetails((prev) => !prev)
 }
 
-    
-
-
-
 return (
 <div>
     <div className="ui column">
@@ -32,8 +28,9 @@ return (
                 </div>
                     <div>
                         {showDetails ? <DrinkDetails drink={drink} /> : null}
-                            <button
+                            <button                             
                             id='remove-drink'
+                            
                                 style={{ background: 'black', color: 'chocolate', border: 'black' }}
                                 onClick={null}>
                                 Remove Drink
@@ -42,7 +39,7 @@ return (
                 </div>
             </div>
     </div>
-  );
+    );
 }
 
 export default DrinkCard

@@ -32,6 +32,13 @@ const handleClickMore = () => {
     setDrinkIndex((drinkIndex) => (drinkIndex + 5) % drinks.length)
 }
 
+const handleBackClick = () => {
+  if(drinkIndex === 0) {
+    return drinkIndex
+  } else {
+    setDrinkIndex((drinkIndex) => (drinkIndex - 5)) 
+  }
+}
   return (
     <div >
         <input id= 'search' type='text' placeholder='Search Drinks' onChange={handleOnChange}/>
@@ -43,7 +50,9 @@ const handleClickMore = () => {
             <option value="Coffee / Tea">Coffee/Tea</option>
             <option value="Punch / Party Drink">Punch/Party Drink</option>
           </select>
-        <div className='belt'>        {drinkComponents}
+        <div className='belt'>
+        <button id= 'more-button' onClick={handleBackClick}>Back</button>
+          {drinkComponents}
         <button id= 'more-button' onClick={handleClickMore}>More</button>
         </div>
     </div>

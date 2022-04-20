@@ -1,15 +1,11 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import AddDrinkForm from './AddDrinkForm'
-import About from './About'
 
 function Header() {
 
-
-
   return (
     <>
-    <h1 id= "header">DrinkLounge</h1>
+    <h1 id= "header">Flatiron Lounge</h1>
     <div>
       <h3>
       <NavLink id= 'drink-link' to='/' exact>
@@ -25,7 +21,6 @@ function Header() {
       </NavLink></h5>
   </div>
     </>
-    // SearchBar, Category Dropdown, Ingredient DropDown, addDrinkForm
   )
 }
 

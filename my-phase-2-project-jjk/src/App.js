@@ -6,7 +6,8 @@ import DrinkDetails from './components/DrinkDetails'
 import About from './components/About'
 import Header from './components/Header'
 import {useState, useEffect} from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
+
 const API ="http://localhost:4000/drinks"
 
 
@@ -19,12 +20,16 @@ const [drinksList, setDrinksList] = useState([])
     .then(setDrinksList)
   },[])
 
+  const onAddDrinkForm = (newDrink) => {
+    setDrinksList((newDrink) => [...drinksList, newDrink]) 
+  }
+
   return (
     <div className="App">
     <Header />
     <Switch>
       <Route exact path='/add drink form'>
-        <AddDrinkForm/>
+        <AddDrinkForm onAddDrinkForm={onAddDrinkForm}/>
       </Route>
       <Route exact path='/drink details'>
         <DrinkDetails/>
