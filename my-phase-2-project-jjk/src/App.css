@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 
-.App {
+body {
   text-align: center;
   /* background-image: URL("https://i.pinimg.com/564x/1b/9a/fe/1b9afe98dbedc2770f6b37b39eb06b90.jpg");
   background-repeat:no-repeat;
@@ -30,7 +30,7 @@ html {
   justify-content: space-evenly;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -39,13 +39,13 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 #ui-card {
 border: solid;
-border-color:#8a4607ba;
-background-color: rgba(29, 19, 1, 0.73);;
-
+border-color: black;
+background-color: rgba(61, 50, 28, 0.73);;
+color:chocolate;
 }
 
 .drink-thumb {
@@ -54,11 +54,121 @@ background-color: rgba(29, 19, 1, 0.73);;
   width: auto;
 }
 #header {
-  padding: 45px;
+  width: 100vw;
+  margin: auto 0;
+  padding: 35px;
   border: solid;
   border-color: black;
   text-align: center;
   background: #8a4607ba;
   color: rgb(5, 0, 0);
-  font-size: 40px;
+  font-size: 45px;
 }
+* {
+  font-family: Garamond, serif;
+}
+#remove-drink {
+  
+  padding: 3px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+#remove-drink:hover {
+  opacity: 1
+}
+#about {
+  color: white;
+}
+
+#drink-link {
+  color: rgba(236, 177, 121, 0.729);
+  font-family:Garamond, serif;
+  transition-duration: 0.4s;
+  font-size: 15px;
+}
+#drink-link:hover {
+  color: rgba(128, 65, 7, 0.729);
+}
+#add-link {
+  color: rgba(236, 177, 121, 0.729);
+  font-size: 15px;
+  transition-duration: 0.4s;
+
+}
+#add-link:hover {
+  color: rgba(205, 101, 4, 0.729);
+}
+#about-link {
+  color: rgba(236, 177, 121, 0.729);
+  font-size: 15px;
+  transition-duration: 0.4s;
+}
+#about-link:hover {
+  color: rgba(205, 101, 4, 0.729);
+}
+#more-button {
+background: black;
+color: chocolate;
+border: black;
+opacity: 0.8;
+display: inline-block;
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: chocolate;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#more-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#more-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#more-button:hover span {
+  padding-right: 25px;
+}
+
+#more-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#search {
+  background: #ac8158ba;
+  border: solid;
+border-color: black;
+
+
+}
+
+
+#all {
+  background: #8a4607ba;
+  border: solid;
+border-color: black;
+}
+input::-webkit-input-placeholder {
+  color: rgb(5, 0, 0) !important;
+  }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function AddDrinkForm() {
   return (
-    <div>AddDrinkForm</div>
+    <div>Add Your Own Concoction</div>
   )
 }
 
