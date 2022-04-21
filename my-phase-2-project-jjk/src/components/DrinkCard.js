@@ -2,12 +2,15 @@ import React,{ useState } from 'react'
 import DrinkDetails from './DrinkDetails'
 import './DrinkCard.css';
 
-function DrinkCard({drink}) {
+function DrinkCard({drink, handleRemove}) {
 const [showDetails, setShowDetails] = useState(false)
 
-const handleDetailsClick = (e) => {
-    e.stopPropagation()
+const handleDetailsClick = () => {
     setShowDetails((prev) => !prev)
+}
+
+const handleClickRemove = () => {
+    handleRemove(drink)
 }
 
 return (
@@ -32,7 +35,7 @@ return (
                             id='remove-drink'
                             
                                 style={{ background: 'black', color: 'chocolate', border: 'black' }}
-                                onClick={null}>
+                                onClick={handleClickRemove}>
                                 Remove Drink
                             </button>
                     </div>

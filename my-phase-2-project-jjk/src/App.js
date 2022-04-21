@@ -6,10 +6,9 @@ import DrinkDetails from './components/DrinkDetails'
 import About from './components/About'
 import Header from './components/Header'
 import {useState, useEffect} from "react";
-import {  Route, Switch } from "react-router-dom";
+import {Route, Switch } from "react-router-dom";
 
 const API ="http://localhost:4000/drinks"
-
 
 function App() {
 const [drinksList, setDrinksList] = useState([])
@@ -21,7 +20,11 @@ const [drinksList, setDrinksList] = useState([])
   },[])
 
   const onAddDrinkForm = (newDrink) => {
-    setDrinksList((newDrink) => [...drinksList, newDrink]) 
+    setDrinksList((drinksList) => [...drinksList, newDrink]) 
+  }
+
+  const handleRemove = (removed) => {
+    setDrinksList(drinksList.filter(drink => drink !== removed))
   }
 
   return (
@@ -39,6 +42,7 @@ const [drinksList, setDrinksList] = useState([])
       </Route>
       <Route exact path='/'>
         <Home
+          handleRemove={handleRemove}
           drinks={drinksList}
         />
       </Route>

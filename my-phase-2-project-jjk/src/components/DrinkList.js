@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import DrinkCard from './DrinkCard'
 
-function DrinkList({drinks}) {
+function DrinkList({drinks, handleRemove}) {
 const [drinkIndex, setDrinkIndex] = useState(0)
 const [searchQuery, setSearchQuery] = useState("");
 const [filterBy, setFilterBy] = useState("All")
@@ -25,7 +25,7 @@ const filteredDrinks = searchResults.filter((drink) => {
 const drinkComponents = filteredDrinks
     .slice(drinkIndex, drinkIndex + 5)
     .map((drink) => (
-        <DrinkCard key={drink.id} drink={drink} />
+        <DrinkCard key={drink.id} drink={drink} handleRemove={handleRemove} />
     ))
 
 const handleClickMore = () => {
@@ -41,7 +41,7 @@ const handleBackClick = () => {
 }
   return (
     <div >
-        <input id= 'search' type='text' placeholder='Search Drinks' onChange={handleOnChange}/>
+        <input className='search' type='text' placeholder='Search Drinks' onChange={handleOnChange}/>
           <select id= 'all' onChange={handleFilterChange} value={filterBy}>
             <option value="All">All</option>
             <option value="Ordinary Drink">Ordinary Drink</option>

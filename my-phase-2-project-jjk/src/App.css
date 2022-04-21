@@ -140,14 +140,20 @@ display: inline-block;
   opacity: 1;
   right: 0;
 }
-#search {
+.search {
   background: #ac8158ba;
   border: solid;
-border-color: black;
+  border-color: black;
 
 
 }
 
+.form {
+  background: #538b48ba;
+  border: solid;
+  border-color: black;
+  padding-bottom: 20px;
+}
 
 #all {
   background: #8a4607ba;
