@@ -27,8 +27,8 @@ const handleSubmit = (e) => {
     };
     fetch("http://localhost:4000/drinks", configObj)
     .then((resp) => resp.json())
-    .then((drink) => {
-        onAddDrinkForm(drink);
+    .then((data) => {
+        onAddDrinkForm(data);
         setformData({
             strDrink: "",
             strCategory: "",
@@ -38,7 +38,6 @@ const handleSubmit = (e) => {
             strMeasure: [],
         });
     });
-    console.log(formData)
 };
 
 return (
@@ -46,21 +45,21 @@ return (
     <form className="form" autoComplete="off" onSubmit={handleSubmit}>
         <h2>Add Your Own Concoction</h2>
 
-        <label htmlFor="name">Name</label>
+        <label htmlFor="strDrink">Name</label>
         <input
         className="search"
         type="text"
-        id="name"
+        id="strDrink"
         name="strDrink"
         onChange={handleChange}
         value={formData.strDrink}
         />
 
-        <label htmlFor="category">Category</label>
+        <label htmlFor="strCategory">Category</label>
         <select
         className="search"
         name="strCategory"
-        id="category"
+        id="strCategory"
         onChange={handleChange}
         value={formData.strCategory}
         >
@@ -71,41 +70,41 @@ return (
         <option value="Punch / Party Drink">Punch / Party Drink</option>
         </select>
 
-        <label htmlFor="ingredients">Ingredients</label>
+        <label htmlFor="strIngredients">Ingredients</label>
         <input
         className="search"
         type="text"
-        id="ingredients"
+        id="strIngredients"
         name="strIngredients"
         onChange={handleChange}
         value={formData.strIngredients}
         />
 
-        <label htmlFor="measurements">Measurements</label>
+        <label htmlFor="strMeasure">Measurements</label>
         <input
         className="search"
         type="text"
-        id="measurements"
+        id="strMeasure"
         name="strMeasure"
         onChange={handleChange}
         value={formData.strMeasure}
         />
  
-        <label htmlFor="instructions">Instructions</label>
+        <label htmlFor="strInstructions">Instructions</label>
         <input
         className="search"
         type="text"
-        id="instructions"
+        id="strInstructions"
         name="strInstructions"
         onChange={handleChange}
         value={formData.strInstructions}
         />
 
-        <label htmlFor="image">Image</label>
+        <label htmlFor="strDrinkThumb">Image</label>
         <input
         className="search"
         type="text"
-        id="image"
+        id="strDrinkThumb"
         name="strDrinkThumb"
         onChange={handleChange}
         value={formData.strDrinkThumb}

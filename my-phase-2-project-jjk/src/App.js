@@ -20,6 +20,7 @@ const [drinksList, setDrinksList] = useState([])
   },[])
 
   const onAddDrinkForm = (newDrink) => {
+    console.log(newDrink)
     setDrinksList((drinksList) => [...drinksList, newDrink]) 
   }
 
