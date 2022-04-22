@@ -2,6 +2,7 @@ import React from 'react'
 
 function DrinkDetails({drink}) {
 
+// Changing from mapped over list to strings for form functionality
 const drinkIngredients = 
     drink.strIngredients.map((ingredient) => (
         <li>{ingredient}</li>))
@@ -25,8 +26,10 @@ return (
         
         <div>
         <h3>Ingredients</h3>
+            {/* <p>{drink.strIngredients}</p> */}
             {drinkIngredients}
         <h3>Measurements</h3>
+            {/* <p>{drink.Measure}</p> */}
             {drinkMeasurements}
         </div>
         <div>

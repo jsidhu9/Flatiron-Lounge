@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 
 function AddDrinkForm({onAddDrinkForm}) {
+// const [ingredients, setingredients] = useState([])
 const [formData, setformData] = useState({
     strDrink: "",
     strCategory: "",
@@ -14,6 +15,8 @@ const handleChange = (e) => {
     const { name,  value} = e.target
     setformData((formData) => ({...formData, [name]: value}))
 }
+
+
 
 const handleSubmit = (e) => {
     e.preventDefault();
