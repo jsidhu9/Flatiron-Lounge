@@ -641,8 +641,12 @@
       "strCategory": "Cocktail",
       "strInstructions": "Add the bourbon whiskey, lemon juice, and syrup to a cocktail shaker. Fill with a handful of ice and shake until very cold. Strain the drink into a lowball or Old Fashioned glass. Serve with ice, an orange peel and a cocktail cherry. ",
       "strDrinkThumb": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Whiskey-Sour-111.jpg",
-      "strIngredients": ["Bourbon Whiskey, Lemon Juice, Maple Syrup, Orange Peel"],
-      "strMeasure": ["2oz. , 1oz. , 3/4oz. "],
+      "strIngredients": [
+        "Bourbon Whiskey, Lemon Juice, Maple Syrup, Orange Peel"
+      ],
+      "strMeasure": [
+        "2oz. , 1oz. , 3/4oz. "
+      ],
       "id": "pkXwOGL"
     },
     {
@@ -650,8 +654,12 @@
       "strCategory": "Punch / Party Drink",
       "strInstructions": "Top mix with Prosecco Rose  Garnish with mint and strawberry",
       "strDrinkThumb": "https://www.brit.co/media-library/summer-punch-single-large-batch.jpg?id=26408357&width=800&quality=80",
-      "strIngredients": ["1.5oz Zyr Vodka, Grapefruit Liqueur, Elderflower Liqueur, Lemon Juice, Strawberry Syrup"],
-      "strMeasure": ["1.5oz, .25oz, .25oz, .75oz, .5oz"],
+      "strIngredients": [
+        "1.5oz Zyr Vodka, Grapefruit Liqueur, Elderflower Liqueur, Lemon Juice, Strawberry Syrup"
+      ],
+      "strMeasure": [
+        "1.5oz, .25oz, .25oz, .75oz, .5oz"
+      ],
       "id": "9ePvJL5"
     },
     {
@@ -659,8 +667,12 @@
       "strCategory": "Cocktail",
       "strInstructions": "Mix ingredients in a highball glass over cubed ice.  Top with bitter lemon.  Stir gently and garnish with a lemon wheel.",
       "strDrinkThumb": "https://www.brit.co/media-library/the-elyx-spritz.jpg?id=29503173&width=800&quality=80",
-      "strIngredients": [" Absolut Elyx Vodka, Lillet Rose, Fever Tree Elderflower Tonic,  Lemon"],
-      "strMeasure": ["1.5 oz,  1.5 oz "],
+      "strIngredients": [
+        " Absolut Elyx Vodka, Lillet Rose, Fever Tree Elderflower Tonic,  Lemon"
+      ],
+      "strMeasure": [
+        "1.5 oz,  1.5 oz "
+      ],
       "id": "P6tkAzG"
     },
     {
@@ -668,9 +680,22 @@
       "strCategory": "Cocktail",
       "strInstructions": "Shake and serve over ice with Tajin rim and an Orange wheel garnish.",
       "strDrinkThumb": "https://www.brit.co/media-library/haba-u00f1ero-mango-margarita-recipe.jpg?id=26408344&width=800&quality=80",
-      "strIngredients": ["infused Canción Tequila"],
-      "strMeasure": ["1.5 oz"],
+      "strIngredients": [
+        "infused Canción Tequila"
+      ],
+      "strMeasure": [
+        "1.5 oz"
+      ],
       "id": "__KWdy-"
+    },
+    {
+      "strDrink": "Flaming Flati",
+      "strCategory": "Shot",
+      "strInstructions": "pour and light",
+      "strDrinkThumb": "https://www.liquor.com/thmb/SHzzNV_H8Lai46PRUvMsEy1WulQ=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/flaming-dr-pepper-shots-720x720-primary-9cfa29663c4c4436852639a94f213142.jpg",
+      "strIngredients": "Flavor and Fire",
+      "strMeasure": "a bunch",
+      "id": "rDUd_1v"
     }
   ]
 }

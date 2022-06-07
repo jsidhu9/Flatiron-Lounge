@@ -4,7 +4,6 @@ import DrinkList from './DrinkList'
 function Home({drinks, handleRemove}) {
 
   return (
-
     <>
     <div>
     <DrinkList  

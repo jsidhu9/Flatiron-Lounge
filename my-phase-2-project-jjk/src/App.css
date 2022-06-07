@@ -98,11 +98,11 @@ color:rgba(236, 177, 121, 0.729);
   color: rgba(205, 101, 4, 0.729);
 }
 #more-button {
-background: black;
-color: chocolate;
-border: black;
-opacity: 0.8;
-display: inline-block;
+  background: black;
+  color: chocolate;
+  border: black;
+  opacity: 0.8;
+  display: inline-block;
   border-radius: 4px;
   background-color: #000000;
   border: none;
